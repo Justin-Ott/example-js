@@ -1,0 +1,33 @@
+{
+  "name": "@willow-dls/example",
+  "version": "1.0.0",
+  "description": "Several examples of how to test circuits using Willow and JavaScript",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willow-dls/example.git"
+  },
+  "author": "Jordan Bancino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willow-dls/example/issues"
+  },
+  "homepage": "https://github.com/willow-dls/example#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-typescript": "^7.27.0",
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.14.0",
+    "jest": "^29.7.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@willow-dls/core": "^0.4.1"
+  }
+}
