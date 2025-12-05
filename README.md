@@ -15,18 +15,18 @@ npm test
 
 ## What's Included
 
-This repository contains a 4-bit ripple-carry adder circuit from CircuitVerse with three different testing approaches. Each test file demonstrates a different testing philosophy—all written in straightforward JavaScript (no TypeScript required).
+This repository contains a 4-bit ripple-carry adder circuit from CircuitVerse with three different testing approaches. Each test file demonstrates a different testing philosophy-all written in straightforward JavaScript (no TypeScript required).
 <img width="953" height="539" alt="image" src="https://github.com/user-attachments/assets/c3899228-8bd6-46c4-ab9a-48bf95c00eec" />
 
 
 ### Test Files
 
-#### 1. **ripple-carry-table.test.js** — Start Here!
+#### 1. **ripple-carry-table.test.js** - Start Here!
 A straightforward, table-driven test using specific values. This is the best file to read first if you're new to Willow testing.
 
 **Why use this approach?**
 - Easy to understand and modify
-- Good for documentation—the test table doubles as a specification
+- Good for documentation-the test table doubles as a specification
 - Perfect for testing known edge cases and important scenarios
 - Minimal setup required
 - Great for sharing test cases with non-programmers (educators, stakeholders)
@@ -54,7 +54,7 @@ test.each(testCases)(
 );
 ```
 
-#### 2. **ripple-carry-edge-cases.test.js** — Learn Testing Patterns
+#### 2. **ripple-carry-edge-cases.test.js** - Learn Testing Patterns
 Organized by testing category (boundary values, commutativity, carry propagation, etc.). Shows how to verify mathematical properties and circuit behavior.
 
 **Why use this approach?**
@@ -89,11 +89,11 @@ describe("Commutativity (Addition Order)", () => {
 });
 ```
 
-#### 3. **ripple-carry-exhaustive.test.js** — Complete Coverage
+#### 3. **ripple-carry-exhaustive.test.js** - Complete Coverage
 Tests all 256 possible 4-bit additions by iterating through every combination of inputs.
 
 **Why use this approach?**
-- Absolute confidence in correctness—no case is left untested
+- Absolute confidence in correctness-no case is left untested
 - Excellent for critical circuits (ALUs, adders, etc.)
 - Catches corner cases you might not think of
 - Much simpler in JavaScript than in other languages
@@ -312,7 +312,7 @@ test("output never exceeds input", () => {
 - **Document your tests.** Good descriptions help others (and future you) understand what's being tested.
 - **Use meaningful variable names.** Compare `a`, `b`, `carry` to `inputA`, `inputB`, `carryIn`.
 - **Group related tests.** Use `describe()` blocks to organize by functionality.
-- **Don't over-test.** Exhaustive testing is powerful but slow—use it selectively.
+- **Don't over-test.** Exhaustive testing is powerful but slow-use it selectively.
 - **Check all outputs.** Don't forget to verify carry-out, flags, or other secondary outputs.
 - **Use helper functions.** JavaScript makes it easy to abstract away repetitive logic.
 
